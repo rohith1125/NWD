@@ -46,11 +46,14 @@ body.dark-mode {
 main {
     flex: 1;
 }
+
+/* Highlight Class */
 .highlight {
     color: #e74c3c;
     font-weight: bold;
 }
-/* Using CSS Variables */
+
+/* News Section */
 .news {
     padding: 40px 20px;
     background-color: #f9f9f9;
@@ -82,7 +85,7 @@ main {
 }
 
 .news article h3:hover {
-    color: #005bbb;
+    color: var(--button-hover-bg-color);
     cursor: pointer;
 }
 
@@ -92,7 +95,7 @@ main {
     color: #555;
 }
 
-/* Dark Mode Styles */
+/* Dark Mode Styles for News Section */
 body.dark-mode .news {
     background-color: var(--dark-card-color);
 }
@@ -110,8 +113,8 @@ body.dark-mode .news article {
     border-bottom: 1px solid #444;
 }
 
-.news article h3:hover {
-    color: var(--button-hover-bg-color);
+body.dark-mode .news article h3:hover {
+    color: var(--dark-hover-color);
 }
 
 /* Navbar Styles */
@@ -174,6 +177,17 @@ body.dark-mode .nav-links a:hover {
     color: #fbc02d;           /* Yellow color when active */
 }
 
+/* Style for visited links */
+.resource-list a:visited {
+    color: var(--secondary-color);
+}
+
+body.dark-mode .resource-list a:visited {
+    color: var(--dark-secondary-color);
+}
+
+/* Note: :hover styles override :visited styles, so when a visited link is hovered, the :hover color will apply */
+
 /* Dark Mode Link Styles in Resource List */
 body.dark-mode .resource-list a {
     color: var(--dark-text-color);
@@ -185,24 +199,6 @@ body.dark-mode .resource-list a:hover {
 
 body.dark-mode .resource-list a:active {
     color: var(--dark-active-color);
-}
-
-/* Style for visited links */
-.resource-list a.visited {
-    color: var(--secondary-color);
-    text-decoration: underline;
-}
-
-.resource-list a.visited:hover {
-    color: darkmagenta;
-}
-
-body.dark-mode .resource-list a.visited {
-    color: var(--dark-secondary-color);
-}
-
-body.dark-mode .resource-list a.visited:hover {
-    color: var(--dark-hover-color);
 }
 
 /* Hero Section */
