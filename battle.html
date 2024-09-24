@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon World - Battle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Pokémon World Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pokemon-list.html">Pokémon List</a></li>
+                <li><a href="pokedex.html">Pokédex</a></li>
+                <li><a href="battle.html">Battle</a></li>
+                <li><a href="evolution.html">Evolution</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Dark mode toggle switch -->
+            <button class="theme-toggle" type="button" title="Toggle theme" aria-label="Toggle theme">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1em" height="1em" fill="currentColor" class="theme-toggle__expand" viewBox="0 0 32 32">
+                    <clipPath id="theme-toggle__expand__cutout">
+                        <path d="M0-11h25a1 1 0 0017 13v30H0Z" />
+                    </clipPath>
+                    <g clip-path="url(#theme-toggle__expand__cutout)">
+                        <circle cx="16" cy="16" r="8.4" />
+                        <path d="M18.3 3.2c0 1.3-1 2.3-2.3 2.3s-2.3-1-2.3-2.3S14.7.9 16 .9s2.3 1 2.3 2.3zm-4.6 25.6c0-1.3 1-2.3 2.3-2.3s2.3 1 2.3 2.3-1 2.3-2.3 2.3-2.3-1-2.3-2.3zm15.1-10.5c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zM3.2 13.7c1.3 0 2.3 1 2.3 2.3s-1 2.3-2.3 2.3S.9 17.3.9 16s1-2.3 2.3-2.3zm5.8-7C9 7.9 7.9 9 6.7 9S4.4 8 4.4 6.7s1-2.3 2.3-2.3S9 5.4 9 6.7zm16.3 21c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zm2.4-21c0 1.3-1 2.3-2.3 2.3S23 7.9 23 6.7s1-2.3 2.3-2.3 2.4 1 2.4 2.3zM6.7 23C8 23 9 24 9 25.3s-1 2.3-2.3 2.3-2.3-1-2.3-2.3 1-2.3 2.3-2.3z" />
+                    </g>
+                </svg>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="battle">
+            <h1>Pokémon Battle Arena</h1>
+            <div class="battle-area">
+                <label for="pokemon1">Choose your Pokémon:</label>
+                <select id="pokemon1" class="pokemon-select">
+                    <option value="Pikachu">Pikachu</option>
+                    <option value="Charizard">Charizard</option>
+                    <option value="Bulbasaur">Bulbasaur</option>
+                    <option value="Squirtle">Squirtle</option>
+                </select>
+                <label for="pokemon2">Choose opponent Pokémon:</label>
+                <select id="pokemon2" class="pokemon-select">
+                    <option value="Pikachu">Pikachu</option>
+                    <option value="Charizard">Charizard</option>
+                    <option value="Bulbasaur">Bulbasaur</option>
+                    <option value="Squirtle">Squirtle</option>
+                </select>
+                <button id="battleBtn">Start Battle</button>
+                <div id="battleResult" class="battle-result"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Pokémon World. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
