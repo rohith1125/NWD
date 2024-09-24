@@ -135,7 +135,7 @@ To ensure semantic structure and enhance accessibility, the website utilizes a v
 
 - **Table Elements:**
   - `<table>`, `<thead>`, `<tbody>`, `<tr>`, `<th>`, `<td>`: Used in the Pokédex page to display Pokémon data.
-  
+
 ## Advanced HTML Features
 - **rowspan and colspan in Tables:** The Pokédex table uses `rowspan` to group Pokémon with similar attributes (e.g., evolutions or shared abilities) and `colspan` to merge cells for Pokémon with additional information like Mega Evolutions.
 - **Nested Lists:** In the Resources section, nested lists are used to categorize resources into "Official Resources," "Community Resources," and "Database Resources," enhancing the content structure and readability.
@@ -247,3 +247,6 @@ For any questions, feedback, or support, please reach out through the [Contact U
 ---
 
 **Pokémon World** is a passionate project aimed at bringing Pokémon enthusiasts closer to the creatures they love. We hope you enjoy exploring our website and discovering all the features we've crafted to enhance your Pokémon journey!
+
+
+
