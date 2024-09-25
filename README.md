@@ -240,6 +240,16 @@ The `styles.css` file has been validated using the [W3C CSS Validation Service](
 - **JavaScript:** For adding interactivity and dynamic functionalities.
 - **W3C Validators:** For ensuring code quality and adherence to web standards.
 
+## Resources and References
+
+- **Dark Mode Toggle Button Design:** The design inspiration for the dark mode toggle button was taken from [toggles.dev](https://toggles.dev/expand). The implementation was customized to fit the project requirements using only vanilla HTML, CSS, and JavaScript.
+- **HTML & CSS Validation:** The code has been validated using the W3C HTML and CSS Validation Services.
+  - [HTML Validation Report](https://validator.w3.org/).
+  - [CSS Validation Report](https://jigsaw.w3.org/css-validator/).
+- **Additional Resources:**
+  - JavaScript tutorials and guides from MDN Web Docs.
+  - CSS layout and design techniques from CSS Tricks.
+
 ## Code Comments
 
 The code includes detailed comments to explain the purpose and functionality of each section. This helps in understanding the logic behind the theme toggle, battle mechanism, form validation, and modal popup features. The comments provide context for future developers or anyone reviewing the code.
