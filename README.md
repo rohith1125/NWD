@@ -191,13 +191,14 @@ All HTML pages have been validated using the [W3C Markup Validation Service](htt
 **Front Page Validation Link:**
 [Validate Home Page HTML](https://validator.w3.org/nu/?doc=https://assignment1sairohithnwdt.glitch.me/index.html)
 
-
+**Site HTML Validation Link:**
+[Validate Site HTML](https://validator.w3.org/nu/?doc=https://assignment1sairohithnwdt.glitch.me)
 ### CSS Validation
 
 The `styles.css` file has been validated using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). This validation checks for any syntax errors or compatibility issues within the CSS, ensuring that styles are applied consistently across different browsers.
 
 **Front Page CSS Validation Link:**
-[Validate CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fassignment1sairohithnwdt.glitch.me%2Fstyles.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+[Validate CSS](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fassignment1sairohithnwdt.glitch.me%2Fstyles.css&usermedium=all&vextwarning=&warning=1)
 
 
 ## Screenshots
@@ -236,8 +237,8 @@ The `styles.css` file has been validated using the [W3C CSS Validation Service](
 
 - **Dark Mode Toggle Button Design:** The design inspiration for the dark mode toggle button was taken from [toggles.dev](https://toggles.dev/expand). The implementation was customized to fit the project requirements using only vanilla HTML, CSS, and JavaScript.
 - **HTML & CSS Validation:** The code has been validated using the W3C HTML and CSS Validation Services.
-  - [HTML Validation Report]([https://validator.w3.org/](https://validator.w3.org/nu/?doc=https://assignment1sairohithnwdt.glitch.me/index.html)).
-  - [CSS Validation Report]([https://jigsaw.w3.org/css-validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fassignment1sairohithnwdt.glitch.me%2Fstyles.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)).
+  - [Validate HTML](https://validator.w3.org/nu/?doc=https://assignment1sairohithnwdt.glitch.me)
+  - [Validate CSS](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fassignment1sairohithnwdt.glitch.me%2Fstyles.css&usermedium=all&vextwarning=&warning=1)
 - **Additional Resources:**
   - JavaScript tutorials and guides from MDN Web Docs.
   - CSS layout and design techniques from CSS Tricks.
