@@ -180,7 +180,7 @@ The `script.js` file adds dynamic functionality to Pokémon World, enhancing use
      - Checks if all required fields are filled.
      - Displays a success message if inputs are valid or an error message if any field is missing.
 
-**Note:** All JavaScript functions are executed without errors, ensuring a smooth and responsive user experience.
+**Note:** All JavaScript functions are executed without errors (also ensured from console in the browser), ensuring a smooth and responsive user experience.
 
 ## Validation
 
@@ -189,18 +189,16 @@ The `script.js` file adds dynamic functionality to Pokémon World, enhancing use
 All HTML pages have been validated using the [W3C Markup Validation Service](https://validator.w3.org/). The validation ensures that the HTML syntax is correct and adheres to web standards, promoting better compatibility and accessibility.
 
 **Front Page Validation Link:**
-[Validate Home Page HTML](https://validator.w3.org/nu/?doc=https://your-project-url/index.html)
+[Validate Home Page HTML](https://validator.w3.org/nu/?doc=https://assignment1sairohithnwdt.glitch.me/index.html)
 
-*Replace `https://your-project-url/index.html` with your actual project URL.*
 
 ### CSS Validation
 
 The `styles.css` file has been validated using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). This validation checks for any syntax errors or compatibility issues within the CSS, ensuring that styles are applied consistently across different browsers.
 
 **Front Page CSS Validation Link:**
-[Validate CSS](https://jigsaw.w3.org/css-validator/validator?uri=https://your-project-url/styles.css&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en)
+[Validate CSS](https://jigsaw.w3.org/css-validator/validator?uri=https://assignment1sairohithnwdt.glitch.me/styles.css&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en)
 
-*Replace `https://your-project-url/styles.css` with your actual project URL.*
 
 ## Screenshots
 
@@ -248,10 +246,6 @@ The `styles.css` file has been validated using the [W3C CSS Validation Service](
 
 The code includes detailed comments to explain the purpose and functionality of each section. This helps in understanding the logic behind the theme toggle, battle mechanism, form validation, and modal popup features. The comments provide context for future developers or anyone reviewing the code.
 
-
-## Contact Information
-
-For any questions, feedback, or support, please reach out through the [Contact Us](contact.html) page on the website.
 
 ---
 
