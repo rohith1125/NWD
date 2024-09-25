@@ -62,27 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-    // Modal Popup for About Page
-    const aboutModalBtn = document.getElementById('aboutModalBtn');
-    const aboutModal = document.getElementById('aboutModal');
-    const closeModalBtn = document.getElementsByClassName('close-btn')[0];
-
-    if (aboutModalBtn && aboutModal && closeModalBtn) {
-        aboutModalBtn.onclick = function() {
-            aboutModal.style.display = 'block';
-        };
-
-        closeModalBtn.onclick = function() {
-            aboutModal.style.display = 'none';
-        };
-
-        window.onclick = function(event) {
-            if (event.target == aboutModal) {
-                aboutModal.style.display = 'none';
-            }
-        };
-    }
 });
 
 

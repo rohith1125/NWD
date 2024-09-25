@@ -180,12 +180,6 @@ The `script.js` file adds dynamic functionality to Pokémon World, enhancing use
      - Checks if all required fields are filled.
      - Displays a success message if inputs are valid or an error message if any field is missing.
 
-4. **Modal Popup for About Page:**
-   - **Purpose:** Displays additional information in a modal when triggered.
-   - **Implementation:**
-     - Listens for click events on buttons to open and close the modal.
-     - Controls the display state of the modal based on user interactions.
-
 **Note:** All JavaScript functions are executed without errors, ensuring a smooth and responsive user experience.
 
 ## Validation
