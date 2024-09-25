@@ -240,6 +240,11 @@ The `styles.css` file has been validated using the [W3C CSS Validation Service](
 - **JavaScript:** For adding interactivity and dynamic functionalities.
 - **W3C Validators:** For ensuring code quality and adherence to web standards.
 
+## Code Comments
+
+The code includes detailed comments to explain the purpose and functionality of each section. This helps in understanding the logic behind the theme toggle, battle mechanism, form validation, and modal popup features. The comments provide context for future developers or anyone reviewing the code.
+
+
 ## Contact Information
 
 For any questions, feedback, or support, please reach out through the [Contact Us](contact.html) page on the website.

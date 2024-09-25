@@ -3,42 +3,50 @@
     /* Light Theme Variables */
     --primary-color: #007aff;          /* Hover color */
     --secondary-color: #800080;        /* Visited link color */
-    --background-color: #f5f5f5;
+    --background-color: #f5f5f5;       /* Background color */
     --text-color: #333;                /* Default text color */
-    --button-bg-color: #ff6200;
+    --button-bg-color: #ff6200;        /* Button background color */
     --button-hover-bg-color: #005bbb;  /* Active link color */
-    --button-text-color: #fff;
+    --button-text-color: #fff;          /* Button text color */
 
     /* Dark Theme Variables */
-    --dark-bg-color: #2c3e50;
+    --dark-bg-color: #2c3e50;          /* Dark background color */
     --dark-text-color: #ecf0f1;        /* Default dark mode text color */
     --dark-secondary-color: #b19cd9;   /* Visited link color in dark mode */
     --dark-hover-color: #1abc9c;       /* Hover color in dark mode */
     --dark-active-color: #e74c3c;      /* Active link color in dark mode */
-    --dark-nav-color: #1a252f;
-    --dark-footer-color: #1a252f;
-    --dark-card-color: #2c3e50;
-    --dark-button-bg-color: #555;
-    --dark-button-hover-bg-color: #666;
-    --dark-button-text-color: #ffffff;
+    --dark-nav-color: #1a252f;         /* Dark navbar color */
+    --dark-footer-color: #1a252f;      /* Dark footer color */
+    --dark-card-color: #2c3e50;         /* Dark card color */
+    --dark-button-bg-color: #555;        /* Dark button background color */
+    --dark-button-hover-bg-color: #666; /* Dark button hover background color */
+    --dark-button-text-color: #ffffff;   /* Dark button text color */
 }
 
 /* Base Styles */
 body {
+    /* Base font family */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Background color */
     background-color: var(--background-color);
+    /* Text color */
     color: var(--text-color);
+    /* Reset margins and paddings */
     margin: 0;
     padding: 0;
+    /* Flex container for full viewport height */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    /* Smooth transition for background and text color */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Dark mode */
 body.dark-mode {
+    /* Dark background color */
     background-color: var(--dark-bg-color);
+    /* Dark text color */
     color: var(--dark-text-color);
 }
 
@@ -49,67 +57,90 @@ main {
 
 /* Highlight Class */
 .highlight {
+    /* Highlight color */
     color: #e74c3c;
+    /* Bold text */
     font-weight: bold;
 }
 
 /* News Section */
 .news {
+    /* Padding */
     padding: 40px 20px;
+    /* Background color */
     background-color: #f9f9f9;
+    /* Margin */
     margin: 40px 0;
     border-radius: 8px;
 }
 
 .news h2 {
+    /* Font size */
     font-size: 2em;
+    /* Margin */
     margin-bottom: 30px;
+    /* Text color */
     color: #333;
     text-align: center;
 }
 
 .news article {
+    /* Margin */
     margin-bottom: 30px;
+    /* Padding */
     padding-bottom: 20px;
+    /* Border */
     border-bottom: 1px solid #ddd;
 }
 
 .news article:last-child {
+    /* No border on the last article */
     border-bottom: none;
 }
 
 .news article h3 {
+    /* Font size */
     font-size: 1.5em;
+    /* Margin */
     margin-bottom: 15px;
+    /* Text color */
     color: #007aff;
 }
 
 .news article h3:hover {
+    /* Hover color */
     color: var(--button-hover-bg-color);
     cursor: pointer;
 }
 
 .news article p {
+    /* Font size */
     font-size: 1em;
+    /* Line height */
     line-height: 1.6;
+    /* Text color */
     color: #555;
 }
 
 /* Dark Mode Styles for News Section */
 body.dark-mode .news {
+    /* Dark card color */
     background-color: var(--dark-card-color);
 }
 
 body.dark-mode .news h2,
 body.dark-mode .news article h3 {
+    /* Dark text color */
     color: var(--dark-text-color);
 }
 
 body.dark-mode .news article p {
+    /* Dark text color */
     color: var(--dark-text-color);
 }
 
 body.dark-mode .news article {
+    /* Dark border color */
     border-bottom: 1px solid #444;
 }
 
@@ -119,7 +150,9 @@ body.dark-mode .news article h3:hover {
 
 /* Navbar Styles */
 .navbar {
+    /* Display flex */
     display: flex;
+    /* Space between items */
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
@@ -132,11 +165,14 @@ body.dark-mode .navbar {
 }
 
 .nav-links {
+    /* Remove list style */
     list-style: none;
+    /* Display flex */
     display: flex;
 }
 
 .nav-links li {
+    /* Margin */
     margin: 0 15px;
 }
 
@@ -144,21 +180,27 @@ body.dark-mode .navbar {
 
 /* Base link styles */
 .nav-links a {
+    /* Remove underline */
     text-decoration: none;
+    /* Text color */
     color: var(--button-text-color);
+    /* Bold text */
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
+    /* Hover color */
     color: var(--button-hover-bg-color);
 }
 
 body.dark-mode .nav-links a {
+    /* Dark text color */
     color: var(--dark-button-text-color);
 }
 
 body.dark-mode .nav-links a:hover {
+    /* Dark hover color */
     color: var(--dark-hover-color);
 }
 
@@ -179,10 +221,12 @@ body.dark-mode .nav-links a:hover {
 
 /* Style for visited links */
 .resource-list a:visited {
+    /* Visited link color */
     color: var(--secondary-color);
 }
 
 body.dark-mode .resource-list a:visited {
+    /* Dark visited link color */
     color: var(--dark-secondary-color);
 }
 
@@ -190,61 +234,84 @@ body.dark-mode .resource-list a:visited {
 
 /* Dark Mode Link Styles in Resource List */
 body.dark-mode .resource-list a {
+    /* Dark text color */
     color: var(--dark-text-color);
 }
 
 body.dark-mode .resource-list a:hover {
+    /* Dark hover color */
     color: var(--dark-hover-color);
 }
 
 body.dark-mode .resource-list a:active {
+    /* Dark active color */
     color: var(--dark-active-color);
 }
 
 /* Hero Section */
 .hero {
+    /* Position relative */
     position: relative;
+    /* Center text */
     text-align: center;
+    /* Padding */
     padding: 60px 20px;
     overflow: hidden;
     background: var(--primary-color);
 }
 
 .hero-text {
+    /* Position relative */
     position: relative;
+    /* Z-index */
     z-index: 1;
 }
 
 .hero h1 {
+    /* Font size */
     font-size: 3em;
+    /* Margin */
     margin: 0;
+    /* Text color */
     color: var(--button-text-color);
 }
 
 .hero p {
+    /* Font size */
     font-size: 1.5em;
+    /* Text color */
     color: var(--button-text-color);
 }
 
 .cta-button {
+    /* Display inline-block */
     display: inline-block;
+    /* Padding */
     padding: 15px 30px;
+    /* Background color */
     background-color: var(--button-bg-color);
     color: var(--button-text-color);
     text-decoration: none;
+    /* Font size */
     font-size: 1.2em;
+    /* Border radius */
     border-radius: 5px;
+    /* Transition */
     transition: background-color 0.3s;
 }
 
 .cta-button:hover {
+    /* Hover background color */
     background-color: var(--button-hover-bg-color);
 }
 
 /* Features Section */
 .features {
+    /* Display flex */
     display: flex;
+    /* Space around items */
     justify-content: space-around;
+    /* Padding */
     padding: 20px;
     background-color: var(--background-color);
     transition: background-color 0.3s ease;
@@ -255,8 +322,11 @@ body.dark-mode .features {
 }
 
 .features article {
+    /* Center text */
     text-align: center;
+    /* Max width */
     max-width: 300px;
+    /* Padding */
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -264,15 +334,19 @@ body.dark-mode .features {
 }
 
 .features article:hover {
+    /* Move up */
     transform: translateY(-5px);
+    /* Shadow */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Image styles */
 .features img {
     width: 100%;
     border-radius: 10px;
 }
 
+/* Call to Action Link */
 .cta-link {
     display: inline-block;
     margin-top: 15px;
@@ -282,62 +356,84 @@ body.dark-mode .features {
     transition: color 0.3s;
 }
 
+/* Hover effect */
 .cta-link:hover {
     color: var(--secondary-color);
 }
 
+/* Dark mode */
 body.dark-mode .cta-link {
     color: var(--dark-text-color);
 }
 
 /* Pokémon Gallery */
 .pokemon-gallery {
+    /* Display flex */
     display: flex;
+    /* Wrap items */
     flex-wrap: wrap;
+    /* Space around items */
     justify-content: space-around;
+    /* Padding */
     padding: 20px;
 }
 
 .pokemon-card {
+    /* Background color */
     background-color: #fff;
+    /* Width */
     width: 250px;
+    /* Margin */
     margin: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
+    /* Center text */
     text-align: center;
     transition: background-color 0.3s ease;
 }
 
 body.dark-mode .pokemon-card {
+    /* Dark card color */
     background-color: var(--dark-card-color);
 }
 
 .pokemon-card img {
+    /* Width */
     width: 100%;
+    /* Height */
     height: 200px;
     object-fit: cover;
 }
 
 .pokemon-card h2 {
+    /* Margin */
     margin: 15px 0 5px;
+    /* Font size */
     font-size: 1.5em;
 }
 
 .pokemon-card p {
+    /* Margin */
     margin: 0 0 15px;
+    /* Font size */
     font-size: 1.1em;
+    /* Text color */
     color: #666;
 }
 
 body.dark-mode .pokemon-card p {
+    /* Dark text color */
     color: var(--dark-text-color);
 }
 
 /* Pokédex */
 .pokedex {
+    /* Padding */
     padding: 20px;
+    /* Background color */
     background-color: #fff;
+    /* Shadow */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     max-width: 800px;
@@ -345,6 +441,7 @@ body.dark-mode .pokemon-card p {
 }
 
 body.dark-mode .pokedex {
+    /* Dark background color */
     background-color: var(--dark-nav-color);
 }
 
@@ -361,57 +458,78 @@ table, th, td {
 }
 
 th {
+    /* Background color */
     background-color: #f7f7f7;
+    /* Font weight */
     font-weight: bold;
 }
 
 body.dark-mode th {
+    /* Dark background color */
     background-color: var(--dark-nav-color);
 }
 
 /* Battle Section */
 .battle {
+    /* Center text */
     text-align: center;
+    /* Padding */
     padding: 50px 20px;
 }
 
 .battle-area {
+    /* Display flex */
     display: flex;
+    /* Column direction */
     flex-direction: column;
+    /* Center items */
     align-items: center;
 }
 
 .pokemon-select {
+    /* Margin */
     margin: 20px;
 }
 
 #battleBtn {
+    /* Background color */
     background-color: var(--button-bg-color);
+    /* Text color */
     color: var(--button-text-color);
+    /* Border */
     border: none;
     padding: 15px 30px;
+    /* Font size */
     font-size: 1.2em;
+    /* Cursor */
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 #battleBtn:hover {
+    /* Hover background color */
     background-color: var(--button-hover-bg-color);
 }
 
 .battle-result {
+    /* Margin */
     margin-top: 30px;
+    /* Font size */
     font-size: 1.5em;
+    /* Text color */
     color: var(--button-bg-color);
 }
 
 body.dark-mode .battle-result {
+    /* Dark text color */
     color: var(--dark-text-color);
 }
 
 /* Evolution Section */
 .evolution {
+    /* Padding */
     padding: 50px 20px;
+    /* Center text */
     text-align: center;
 }
 
@@ -427,18 +545,25 @@ figure {
 }
 
 figure img {
+    /* Width */
     width: 150px;
+    /* Height */
     height: 150px;
+    /* Border radius */
     border-radius: 50%;
+    /* Shadow */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 figcaption {
+    /* Font size */
     font-size: 1.2em;
+    /* Margin */
     margin-top: 10px;
 }
 
 body.dark-mode figure img {
+    /* Border */
     border: 2px solid var(--dark-text-color);
 }
 
@@ -446,24 +571,31 @@ body.dark-mode figure img {
 .contact-form {
     padding: 50px 20px;
     background-color: #fff;
+    /* Max width */
     max-width: 600px;
+    /* Margin */
     margin: 20px auto;
+    /* Shadow */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Border radius */
     border-radius: 8px;
     transition: background-color 0.3s ease;
 }
 
 body.dark-mode .contact-form {
+    /* Dark background color */
     background-color: var(--dark-nav-color);
 }
 
 .contact-form h1 {
+    /* Margin */
     margin-bottom: 30px;
 }
 
 label {
     display: block;
     font-size: 1.1em;
+    /* Margin */
     margin: 10px 0 5px;
 }
 
@@ -471,23 +603,32 @@ input, textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
+    /* Border */
     border: 1px solid #ccc;
+    /* Border radius */
     border-radius: 5px;
+    /* Font size */
     font-size: 1em;
 }
 
 textarea {
+    /* Height */
     height: 150px;
+    /* Resize */
     resize: none;
 }
 
 button {
     background-color: var(--button-bg-color);
     color: var(--button-text-color);
+    /* Border */
     border: none;
+    /* Padding */
     padding: 15px 30px;
+    /* Font size */
     font-size: 1.2em;
     cursor: pointer;
+    /* Border radius */
     border-radius: 5px;
     transition: background-color 0.3s;
 }
@@ -497,31 +638,41 @@ button:hover {
 }
 
 .form-message {
+    /* Margin */
     margin-top: 20px;
+    /* Font size */
     font-size: 1.2em;
     text-align: center;
 }
 
 body.dark-mode .form-message {
+    /* Dark text color */
     color: var(--dark-text-color);
 }
 
 /* Modal Styles */
 .modal {
+    /* Display none */
     display: none;
+    /* Position fixed */
     position: fixed;
+    /* Z-index */
     z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
+    /* Overflow */
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
+    /* Background color */
     background-color: #fff;
+    /* Margin */
     margin: 15% auto;
+    /* Padding */
     padding: 20px;
     border: 1px solid #888;
     width: 60%;
@@ -531,28 +682,36 @@ body.dark-mode .form-message {
 }
 
 body.dark-mode .modal-content {
+    /* Dark background color */
     background-color: var(--dark-nav-color);
     color: var(--dark-text-color);
 }
 
 .close-btn {
     color: #aaa;
+    /* Float right */
     float: right;
+    /* Font size */
     font-size: 28px;
+    /* Font weight */
     font-weight: bold;
 }
 
 .close-btn:hover,
 .close-btn:focus {
     color: #000;
+    /* Text decoration */
     text-decoration: none;
     cursor: pointer;
 }
 
 /* Footer */
 footer {
+    /* Background color */
     background-color: var(--primary-color);
+    /* Text color */
     color: var(--button-text-color);
+    /* Center text */
     text-align: center;
     padding: 15px 0;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -562,24 +721,32 @@ footer {
 }
 
 body.dark-mode footer {
+    /* Dark background color */
     background-color: var(--dark-footer-color);
 }
 
 /* Theme Toggle Button Styles */
 .theme-toggle {
+    /* Background color */
     background-color: transparent;
+    /* Border */
     border: none;
+    /* Cursor */
     cursor: pointer;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    /* Padding */
     padding: 8px;
+    /* Border radius */
     border-radius: 50%;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .theme-toggle:hover {
+    /* Background color */
     background-color: rgba(0, 0, 0, 0.1);
+    /* Transform */
     transform: scale(1.1);
 }
 
@@ -589,24 +756,30 @@ body.dark-mode footer {
 
 /* Style for the SVG icon */
 .theme-toggle__expand {
+    /* Width */
     width: 32px;
+    /* Height */
     height: 32px;
+    /* Fill */
     fill: var(--text-color);
     transition: fill 0.3s ease;
 }
 
 body.dark-mode .theme-toggle__expand {
+    /* Fill */
     fill: var(--button-text-color);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
+        /* Flex direction */
         flex-direction: column;
         align-items: center;
     }
 
     .nav-links li {
+        /* Margin */
         margin: 10px 0;
     }
 }

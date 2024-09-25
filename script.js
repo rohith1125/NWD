@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Function to initialize theme based on localStorage
-    function initializeTheme() {
+    function initializeTheme() {// Function to initialize theme based on localStorage   
         const savedTheme = localStorage.getItem('theme') || 'light';
         if (savedTheme === 'dark') {
             document.body.classList.add('dark-mode');
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Toggle Light/Dark Mode
     const themeToggleButton = document.querySelector('.theme-toggle');
-    themeToggleButton.addEventListener('click', function() {
+    themeToggleButton.addEventListener('click', function() {// Toggle Light/Dark Mode
         document.body.classList.toggle('dark-mode');
         const newTheme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
         localStorage.setItem('theme', newTheme);
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         battleButton.addEventListener('click', function() {
             const pokemon1 = document.getElementById('pokemon1').value;
             const pokemon2 = document.getElementById('pokemon2').value;
-
+            // Battle Functionality
             let winner;
             if (pokemon1 === pokemon2) {
                 winner = "It's a tie!";
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
-
+            // Contact Form Submission
             if (name && email && message) {
                 document.getElementById('formMessage').textContent = "Thank you for your message!";
                 document.getElementById('formMessage').style.color = "green";
